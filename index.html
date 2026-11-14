@@ -98,8 +98,9 @@
   .rail button{background:none;border:0;cursor:pointer;font-family:var(--head);font-size:1.2rem;font-weight:500;color:#5b6878;transform:rotate(-90deg);padding:4px;transition:color .2s}
   .rail button.on{color:var(--amber-600);font-weight:700}
   .rail button.on::after{content:" •"}
-  .slide{display:none;animation:rise .7s ease both}
-  .slide.on{display:block}
+  .slides{display:grid}
+  .slide{grid-area:1/1;visibility:hidden;opacity:0}
+  .slide.on{visibility:visible;opacity:1;animation:rise .7s ease both}
   @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
   .hero h1{font-size:clamp(3rem,6.6vw,5.4rem);font-weight:700;text-transform:uppercase;line-height:.95;color:var(--navy-900)}
   .hero h1 em{font-style:normal;color:var(--amber-600)}
@@ -273,6 +274,26 @@
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
 
   /* ---------- Responsive ---------- */
+  /* ---- header: never wrap ---- */
+  .menu a,.emergency,.emergency b,.logo-text strong,.logo-text small,.topbar .info span,.topbar .social a{white-space:nowrap}
+  .logo{flex:none}
+  @media (max-width:1320px){
+    .menu{gap:20px}
+    .menu a{font-size:1.02rem}
+    .logo-text strong{font-size:1.8rem}
+    .logo-text small{letter-spacing:.22em}
+    .emergency{font-size:1rem}.emergency b{font-size:1.15rem}
+  }
+  @media (max-width:1180px){
+    .menu{display:none}
+    .burger{display:block}
+    .nav{gap:16px}
+    .emergency{margin-left:auto}
+    .menu.open{display:flex;flex-direction:column;align-items:flex-start;gap:2px;position:absolute;top:100%;left:0;right:0;background:#fff;padding:10px 4% 22px;box-shadow:0 20px 30px -20px rgba(6,15,26,.4);border-top:1px solid var(--line)}
+    .menu.open a{display:block;padding:11px 0;font-size:1.15rem}
+    .topbar .info .hide-sm:first-child{display:none}
+    .hero .container{padding-left:56px}
+  }
   @media (max-width:1024px){
     .svc-grid{grid-template-columns:repeat(2,1fr)}
     .sector-grid{grid-template-columns:repeat(3,1fr)}
@@ -280,10 +301,6 @@
     .t-grid{grid-template-columns:1fr 1fr}
   }
   @media (max-width:880px){
-    .menu,.emergency{display:none}
-    .burger{display:block}
-    .menu.open{display:flex;flex-direction:column;align-items:flex-start;gap:4px;position:absolute;top:87px;left:0;right:0;background:#fff;padding:12px 4% 22px;box-shadow:0 20px 30px -20px rgba(6,15,26,.4)}
-    .menu.open a{display:block;padding:12px 0;font-size:1.05rem}
     .hero .container{grid-template-columns:1fr;min-height:auto;padding-left:44px}
     .hero-copy{padding:50px 0 20px}
     .hero-figure{min-height:0}
@@ -300,11 +317,15 @@
     .steps::before{display:none}
     .faq-aside{position:static}
     .topbar .hide-sm{display:none!important}
-    .topbar .info{justify-content:center;width:100%;white-space:nowrap}
+    .topbar .info{white-space:nowrap}
+    .rail{display:none}
+    .hero .container{padding-left:0}
     .topbar .info{gap:16px;font-size:.85rem}
     .topbar .social{gap:14px;font-size:.85rem}
   }
   @media (max-width:600px){
+    .emergency{display:none}
+    .topbar .info{justify-content:center;width:100%}
     .about-visual{min-height:0;aspect-ratio:4/3.4}
     .about-card{top:auto!important;bottom:14px;padding:10px 14px!important;max-width:180px!important}
     .about-card b{font-size:1.6rem}
@@ -402,6 +423,7 @@
       <button data-i="3">04</button><button data-i="2">03</button><button data-i="1">02</button><button data-i="0" class="on">01</button>
     </div>
     <div class="hero-copy">
+      <div class="slides">
       <div class="slide on">
         <h1>Security <em>Service</em></h1>
         <div class="tagline">For your personal safety</div>
@@ -421,6 +443,7 @@
         <h1>Event <em>Security</em></h1>
         <div class="tagline">Calm · Controlled · Professional</div>
         <p class="lead">Access control, crowd management and VIP protection for weddings, conferences, concerts and launches.</p>
+      </div>
       </div>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Get a Free Assessment</a>
