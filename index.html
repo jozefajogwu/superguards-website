@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Superguards Ltd | Professional Security Services in Nigeria</title>
+<meta name="description" content="Superguards Ltd provides trained security guards, executive protection, CCTV installation, alarm monitoring and event security for homes, businesses and institutions nationwide from our office in Jos, Plateau State.">
+<link rel="icon" type="image/png" href="assets/logo-navy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#060f1a;
+    --navy-900:#0a1828;
+    --navy-800:#10233a;
+    --navy-700:#183252;
+    --amber:#f2a900;
+    --amber-600:#d99500;
+    --ink:#0f1b2a;
+    --muted:#5b6878;
+    --line:#e3e8ee;
+    --paper:#f5f7fa;
+    --white:#ffffff;
+    --radius:14px;
+    --shadow:0 18px 40px -18px rgba(6,15,26,.35);
+    --head:'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --body:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .container{width:min(1180px,92%);margin-inline:auto}
+  h1,h2,h3,h4{font-family:var(--head);line-height:1.05;letter-spacing:.2px}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber-600)}
+  .eyebrow::before{content:"";width:28px;height:2px;background:var(--amber)}
+  .section{padding:clamp(70px,9vw,120px) 0}
+  .section-head{max-width:640px;margin-bottom:54px}
+  .section-head.center{margin-inline:auto;text-align:center}
+  .section-head.center .eyebrow::after{content:"";width:28px;height:2px;background:var(--amber)}
+  .section-head h2{font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:700;text-transform:uppercase;margin:14px 0 16px}
+  .section-head p{color:var(--muted);font-size:1.05rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:.95rem;border:2px solid transparent;cursor:pointer;transition:transform .2s, background .2s, color .2s, border-color .2s;font-family:var(--body)}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--amber);color:var(--navy-950)}
+  .btn-primary:hover{background:#ffbb1c}
+  .btn-ghost{border-color:rgba(255,255,255,.35);color:#fff}
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber)}
+  .btn-dark{background:var(--navy-900);color:#fff}
+  .btn-dark:hover{background:var(--navy-700)}
+
+  /* placeholders the client must fill in */
+  .ph{background:rgba(242,169,0,.16);outline:1px dashed var(--amber);border-radius:4px;padding:0 4px}
+
+  /* ---------- Top bar & header (light style) ---------- */
+  .topbar{background:#f4f6f9;color:#1b2533;font-size:.82rem;border-bottom:1px solid var(--line);font-family:var(--head);letter-spacing:.06em;text-transform:uppercase}
+  .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;flex-wrap:wrap}
+  .topbar .social{display:flex;align-items:center;gap:20px;font-weight:600;font-size:.95rem}
+  .topbar .social svg{width:16px;height:16px;color:var(--amber-600)}
+  .topbar .social a:hover{color:var(--amber-600)}
+  .topbar .info{display:flex;gap:30px;font-weight:600;font-size:.95rem}
+  .topbar .info span{display:inline-flex;align-items:center;gap:9px}
+  .topbar a[href^="mailto"]{text-transform:none;letter-spacing:.02em}
+  .topbar .info svg{width:16px;height:16px;color:var(--amber-600)}
+  header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 6px 20px -16px rgba(6,15,26,.5)}
+  header::after{content:"";display:block;height:7px;background:repeating-linear-gradient(-45deg,#c9d0d9 0 2px,transparent 2px 6px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:94px;gap:24px}
+  .logo{display:flex;align-items:center;gap:12px;color:var(--navy-900)}
+  .logo-mark{width:58px;height:58px}
+  .logo-text strong{display:block;font-family:var(--head);font-size:2.1rem;font-weight:700;letter-spacing:.02em;line-height:1}
+  .logo-text strong i{font-style:normal;color:var(--amber-600)}
+  .logo-text small{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  footer .logo{color:#fff}
+  .menu{display:flex;align-items:center;gap:30px;list-style:none}
+  .menu a{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:1.15rem;letter-spacing:.03em;color:var(--navy-900);display:inline-flex;align-items:center;gap:6px;transition:color .2s}
+  .menu a .plus{font-size:1.3rem;line-height:1;font-weight:700}
+  .menu a:hover,.menu a.active{color:var(--amber-600)}
+  .emergency{font-family:var(--head);font-weight:700;line-height:1.25;font-size:1.15rem;color:var(--navy-900)}
+  .emergency span{color:var(--amber-600)}
+  .emergency b{display:block;font-size:1.3rem;letter-spacing:.03em}
+  .burger{display:none;background:none;border:0;color:var(--navy-900);cursor:pointer}
+  .burger svg{width:30px;height:30px}
+
+  /* ---------- Hero (light, slider) ---------- */
+  .hero{position:relative;overflow:hidden;color:var(--navy-900);
+    background:
+      linear-gradient(118deg, transparent 0 46%, rgba(255,255,255,.75) 46% 58%, transparent 58%),
+      linear-gradient(62deg, transparent 0 62%, rgba(255,255,255,.6) 62% 74%, transparent 74%),
+      linear-gradient(135deg, rgba(255,255,255,.55) 0 18%, transparent 18%),
+      linear-gradient(180deg,#eceff3,#e3e7ec)}
+  .hero .container{position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:end;min-height:640px;padding-left:70px}
+  .hero-copy{align-self:center;padding:70px 0 120px;position:relative;z-index:2}
+  .crosshair{position:absolute;width:90px;height:90px;color:#b9c2cd;opacity:.7;pointer-events:none}
+  .rail{position:absolute;left:0;top:30px;bottom:30px;display:flex;flex-direction:column;align-items:center;gap:22px}
+  .rail::before,.rail::after{content:"";width:1px;flex:1;background:#b7c0cb}
+  .rail button{background:none;border:0;cursor:pointer;font-family:var(--head);font-size:1.2rem;font-weight:500;color:#5b6878;transform:rotate(-90deg);padding:4px;transition:color .2s}
+  .rail button.on{color:var(--amber-600);font-weight:700}
+  .rail button.on::after{content:" •"}
+  .slide{display:none;animation:rise .7s ease both}
+  .slide.on{display:block}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  .hero h1{font-size:clamp(3rem,6.6vw,5.4rem);font-weight:700;text-transform:uppercase;line-height:.95;color:var(--navy-900)}
+  .hero h1 em{font-style:normal;color:var(--amber-600)}
+  .hero .tagline{font-family:var(--head);font-weight:600;text-transform:uppercase;letter-spacing:.45em;font-size:clamp(1rem,1.6vw,1.35rem);color:#3b4757;margin:18px 0 26px}
+  .hero p.lead{font-size:1.06rem;color:#46525f;max-width:500px;margin-bottom:32px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .btn-outline{border-color:var(--navy-900);color:var(--navy-900)}
+  .btn-outline:hover{background:var(--navy-900);color:#fff}
+  .hero-figure{position:relative;height:100%;display:flex;align-items:flex-end;justify-content:center;z-index:1}
+  .hero-figure svg.guard,.hero-figure img.guard{width:min(470px,100%);height:auto;position:relative;z-index:1;filter:drop-shadow(0 30px 40px rgba(6,15,26,.25))}
+  .hero-figure .guard-sprite{height:620px;max-height:92%;aspect-ratio:270/576;background-size:1000% 900%;background-repeat:no-repeat;background-position:0 0;position:relative;z-index:1;pointer-events:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 18%,#000 82%,transparent 100%),linear-gradient(180deg,transparent 0,#000 10%,#000 94%,transparent 100%);
+    -webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 18%,#000 82%,transparent 100%),linear-gradient(180deg,transparent 0,#000 10%,#000 94%,transparent 100%);mask-composite:intersect}
+  .hero-figure{min-height:600px}
+  .watermark{position:absolute;right:-8%;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font-family:var(--head);font-weight:800;font-size:clamp(5rem,7.6vw,7.2rem);letter-spacing:.04em;color:transparent;-webkit-text-stroke:2px rgba(10,24,40,.09);background:linear-gradient(rgba(10,24,40,.07),rgba(10,24,40,.07));-webkit-background-clip:text;background-clip:text;line-height:1;pointer-events:none;white-space:nowrap}
+
+  /* ---------- Stats strip ---------- */
+  .stats{position:relative;z-index:2;margin-top:0;padding-top:50px}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+  .stat{padding:32px 28px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:0}
+  .stat b{display:block;font-family:var(--head);font-size:2.7rem;font-weight:700;color:var(--navy-900);line-height:1}
+  .stat b span{color:var(--amber)}
+  .stat small{color:var(--muted);font-size:.9rem}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:stretch}
+  .about-visual{position:relative;min-height:560px;border-radius:22px;overflow:hidden;background:linear-gradient(150deg,var(--navy-800),var(--navy-950))}
+  .about-visual .photo-slot{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#6e819a;font-size:.85rem;padding:30px}
+  .about-visual .photo-slot svg{width:70px;margin:0 auto 12px;color:#3a5677}
+  .about-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+  .about-visual::after{content:"";position:absolute;left:0;top:0;width:8px;height:100%;background:var(--amber)}
+  .about-card{position:absolute;right:-1px;top:28px;padding:16px 20px!important;max-width:220px!important;box-shadow:0 12px 30px -10px rgba(0,0,0,.45);background:var(--amber);color:var(--navy-950);padding:22px 26px;border-radius:14px 0 0 14px;max-width:250px}
+  .about-card b{font-family:var(--head);font-size:2.4rem;display:block;line-height:1}
+  .about-card span{font-weight:600;font-size:.9rem}
+  .about-copy p{color:var(--muted);margin-bottom:18px}
+  .checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin:26px 0 34px}
+  .checks li{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:.95rem}
+  .checks svg{width:20px;height:20px;color:var(--amber-600);flex:none;margin-top:2px}
+
+  /* ---------- Services ---------- */
+  .services{background:var(--paper)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;position:relative;overflow:hidden;transition:transform .25s, box-shadow .25s, border-color .25s}
+  .svc::before{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--amber);transition:width .3s}
+  .svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .svc:hover::before{width:100%}
+  .svc .icon{width:58px;height:58px;border-radius:12px;background:var(--navy-900);display:grid;place-items:center;margin-bottom:22px}
+  .svc .icon svg{width:28px;height:28px;color:var(--amber)}
+  .svc .num{position:absolute;top:24px;right:26px;font-family:var(--head);font-size:2.6rem;font-weight:800;color:#eef1f5}
+  .svc h3{font-size:1.6rem;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+  .svc p{color:var(--muted);font-size:.95rem}
+
+  /* ---------- Why us (dark) ---------- */
+  .why{background:var(--navy-900);color:#fff;position:relative;overflow:hidden}
+  .why::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 400px at 100% 0%, rgba(242,169,0,.12), transparent 60%)}
+  .why .container{position:relative}
+  .why .section-head p{color:#a9b7c7}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .why-list{display:grid;gap:22px}
+  .why-item{display:flex;gap:20px;padding:24px;border-radius:var(--radius);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07)}
+  .why-item .icon{flex:none;width:50px;height:50px;border-radius:50%;background:rgba(242,169,0,.14);display:grid;place-items:center}
+  .why-item .icon svg{width:24px;height:24px;color:var(--amber)}
+  .why-item h4{font-size:1.4rem;text-transform:uppercase;margin-bottom:6px}
+  .why-item p{color:#a9b7c7;font-size:.94rem}
+  .bars{display:grid;gap:26px;padding:36px;border-radius:var(--radius);background:var(--navy-800);border:1px solid rgba(255,255,255,.07)}
+  .bars h3{font-size:1.8rem;text-transform:uppercase}
+  .bars > p{color:#a9b7c7;font-size:.94rem;margin-top:-14px}
+  .bar-row .top{display:flex;justify-content:space-between;font-weight:600;font-size:.9rem;margin-bottom:9px;text-transform:uppercase;letter-spacing:.06em}
+  .bar-row .top span:last-child{color:var(--amber)}
+  .bar{height:6px;border-radius:9px;background:rgba(255,255,255,.12);overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--amber-600),var(--amber));border-radius:9px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+
+  /* ---------- Process ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s;position:relative}
+  .steps::before{content:"";position:absolute;top:34px;left:12%;right:12%;height:2px;background:repeating-linear-gradient(90deg,var(--amber) 0 10px,transparent 10px 20px)}
+  .step{text-align:center;position:relative}
+  .step .circle{width:68px;height:68px;margin:0 auto 22px;border-radius:50%;background:#fff;border:2px solid var(--amber);display:grid;place-items:center;font-family:var(--head);font-weight:800;font-size:1.6rem;color:var(--navy-900);position:relative;z-index:1}
+  .step h4{font-size:1.45rem;text-transform:uppercase;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.93rem;max-width:240px;margin:auto}
+
+  /* ---------- Sectors ---------- */
+  .sectors{background:var(--paper)}
+  .sector-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+  .sector{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 14px;text-align:center;transition:border-color .2s, transform .2s}
+  .sector:hover{border-color:var(--amber);transform:translateY(-3px)}
+  .sector svg{width:34px;height:34px;margin:0 auto 12px;color:var(--navy-700)}
+  .sector span{font-weight:600;font-size:.9rem}
+
+  /* ---------- CTA band ---------- */
+  .band{background:var(--amber);color:var(--navy-950)}
+  .band .container{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:48px 0;flex-wrap:wrap}
+  .band h3{font-size:clamp(1.8rem,3.4vw,2.6rem);text-transform:uppercase;font-weight:800}
+  .band p{font-weight:500}
+  .band .shield-ico{width:64px;height:64px;border-radius:50%;background:var(--navy-950);display:grid;place-items:center;flex:none}
+  .band .shield-ico svg{width:32px;color:var(--amber)}
+  .band-left{display:flex;gap:22px;align-items:center}
+
+  /* ---------- Testimonials ---------- */
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .t-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;position:relative}
+  .t-card .q{font-family:Georgia,serif;font-size:4rem;line-height:.6;color:var(--amber);height:30px}
+  .t-card p{color:var(--muted);font-style:italic;margin:12px 0 22px}
+  .t-who{display:flex;gap:12px;align-items:center}
+  .t-who .av{width:44px;height:44px;border-radius:50%;background:var(--navy-900);color:var(--amber);display:grid;place-items:center;font-family:var(--head);font-weight:700;font-size:1.1rem}
+  .t-who b{display:block;font-size:.95rem}
+  .t-who small{color:var(--muted)}
+
+  /* ---------- FAQ ---------- */
+  .faq-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+  .faq details{border-bottom:1px solid var(--line);padding:20px 0}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:1.05rem}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .plus{flex:none;width:30px;height:30px;border-radius:50%;background:var(--paper);display:grid;place-items:center;transition:transform .25s, background .25s}
+  .faq details[open] summary .plus{transform:rotate(45deg);background:var(--amber)}
+  .faq details p{color:var(--muted);margin-top:12px;padding-right:40px}
+  .faq-aside{background:var(--navy-900);color:#fff;border-radius:22px;padding:40px;position:sticky;top:110px}
+  .faq-aside h3{font-size:2.2rem;text-transform:uppercase;margin:14px 0 12px}
+  .faq-aside p{color:#a9b7c7;margin-bottom:26px}
+  .faq-aside .phone{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+  .faq-aside .phone .ic{width:52px;height:52px;border-radius:50%;background:var(--amber);display:grid;place-items:center;flex:none}
+  .faq-aside .phone .ic svg{width:24px;color:var(--navy-950)}
+  .faq-aside .phone small{color:#a9b7c7;display:block;font-size:.8rem}
+  .faq-aside .phone b{font-family:var(--head);font-size:1.6rem;letter-spacing:.03em}
+
+  /* ---------- Quote / contact ---------- */
+  .quote{background:linear-gradient(135deg,var(--navy-950),var(--navy-800));color:#fff}
+  .quote-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+  .quote .section-head p{color:#a9b7c7}
+  .contact-list{display:grid;gap:22px;margin-top:10px}
+  .contact-list div{display:flex;gap:16px;align-items:flex-start}
+  .contact-list .ic{width:46px;height:46px;border-radius:12px;background:rgba(242,169,0,.14);display:grid;place-items:center;flex:none}
+  .contact-list .ic svg{width:22px;color:var(--amber)}
+  .contact-list small{display:block;color:#8fa1b5;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;margin-bottom:2px}
+  form.card{background:#fff;color:var(--ink);border-radius:22px;padding:40px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+  form.card h3{font-size:2rem;text-transform:uppercase;margin-bottom:6px}
+  form.card > p{color:var(--muted);margin-bottom:26px;font-size:.95rem}
+  .fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .fields .full{grid-column:1/-1}
+  label{display:block;font-size:.8rem;font-weight:600;margin-bottom:6px;color:var(--navy-800)}
+  input,select,textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:var(--paper);color:var(--ink);transition:border-color .2s, background .2s}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--amber);background:#fff}
+  textarea{min-height:110px;resize:vertical}
+  .form-actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+  .form-note{font-size:.82rem;color:var(--muted);margin-top:14px}
+  .form-ok{display:none;margin-top:16px;padding:12px 16px;border-radius:10px;background:#e8f8ef;color:#17663d;font-weight:500;font-size:.9rem}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy-950);color:#9aabbf;font-size:.92rem}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:44px;padding:70px 0 50px}
+  footer h5{font-family:var(--head);font-size:1.25rem;color:#fff;text-transform:uppercase;letter-spacing:.06em;margin-bottom:18px}
+  footer ul{list-style:none;display:grid;gap:10px}
+  footer ul a:hover{color:var(--amber)}
+  .foot-about p{margin:18px 0 22px;max-width:320px}
+  .socials{display:flex;gap:10px}
+  .socials a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;transition:background .2s,border-color .2s}
+  .socials a:hover{background:var(--amber);border-color:var(--amber);color:var(--navy-950)}
+  .socials svg{width:16px;height:16px}
+  .licence{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border:1px solid rgba(255,255,255,.12);border-radius:10px;margin-top:6px;font-size:.85rem}
+  .licence svg{width:22px;color:var(--amber)}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.84rem}
+
+  /* WhatsApp float */
+  .wa{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);transition:transform .2s}
+  .wa:hover{transform:scale(1.07)}
+  .wa svg{width:30px;color:#fff}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1024px){
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .sector-grid{grid-template-columns:repeat(3,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .t-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:880px){
+    .menu,.emergency{display:none}
+    .burger{display:block}
+    .menu.open{display:flex;flex-direction:column;align-items:flex-start;gap:4px;position:absolute;top:87px;left:0;right:0;background:#fff;padding:12px 4% 22px;box-shadow:0 20px 30px -20px rgba(6,15,26,.4)}
+    .menu.open a{display:block;padding:12px 0;font-size:1.05rem}
+    .hero .container{grid-template-columns:1fr;min-height:auto;padding-left:44px}
+    .hero-copy{padding:50px 0 20px}
+    .hero-figure{min-height:0}
+    .hero-figure .guard-sprite{height:440px}
+    .watermark{display:none}
+    .nav{height:80px}
+    .logo-text strong{font-size:1.7rem}
+    .logo-mark{width:48px;height:48px}
+    .stats-grid{grid-template-columns:1fr 1fr}
+    .stat:nth-child(2){border-right:0}
+    .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .about-grid,.why-grid,.faq-grid,.quote-grid{grid-template-columns:1fr;gap:44px}
+    .steps{grid-template-columns:1fr 1fr;row-gap:44px}
+    .steps::before{display:none}
+    .faq-aside{position:static}
+    .topbar .hide-sm{display:none!important}
+    .topbar .info{justify-content:center;width:100%;white-space:nowrap}
+    .topbar .info{gap:16px;font-size:.85rem}
+    .topbar .social{gap:14px;font-size:.85rem}
+  }
+  @media (max-width:600px){
+    .about-visual{min-height:0;aspect-ratio:4/3.4}
+    .about-card{top:auto!important;bottom:14px;padding:10px 14px!important;max-width:180px!important}
+    .about-card b{font-size:1.6rem}
+    .about-card span{font-size:.78rem}
+    .topbar .social{display:none}
+    .hero h1{font-size:2.8rem}
+    .hero .tagline{letter-spacing:.22em}
+    .crosshair{display:none}
+    .svc-grid,.t-grid{grid-template-columns:1fr}
+    .sector-grid{grid-template-columns:1fr 1fr}
+    .checks{grid-template-columns:1fr}
+    .fields{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    form.card{padding:28px 22px}
+    .stat{padding:24px 18px}
+    .stat b{font-size:2.1rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- Reusable icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6.1c0 5 3.4 9.7 8 10.9 4.6-1.2 8-5.9 8-10.9V5l-8-3Zm0 2.2 6 2.25v4.65c0 3.9-2.5 7.6-6 8.7V4.2Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm18 2-10 7L2 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Zm0-9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm0-15v5l3 2"/></symbol>
+    <symbol id="i-guard" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 9a7 7 0 0 1 14 0M8 5h8"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m3 7 14 4-2 5-12-4 0-5Zm14 4 3-1 1 3-4 2M6 13l-1 7m-2 0h4"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9Zm-4.3 13a2 2 0 0 1-3.4 0"/></symbol>
+    <symbol id="i-vip" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 17h14l1-10-5 4-3-6-3 6-5-4 1 10Zm0 3h14"/></symbol>
+    <symbol id="i-crowd" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-6 9a6 6 0 0 1 12 0m1-9a3 3 0 1 0 0-6m2 15a6 6 0 0 0-3-5.2"/></symbol>
+    <symbol id="i-clip" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 4h6v3H9zM7 5H5v16h14V5h-2M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm-3.5-1.2L7 22l5-3 5 3-1.5-8.2"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+    <symbol id="i-radio" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 9h10v12H7zM10 9V3m0 10h4m-4 4h4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14ZM20 17v4H6.5A2.5 2.5 0 0 1 4 19.5"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 10h18L12 4 3 10Zm2 0v8m4.5-8v8m5-8v8M19 10v8M3 21h18"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m3 10 9-7 9 7v11H3V10Zm6 11v-6h6v6"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 21V9l6 4V9l6 4V5h6v16H3Zm4-4h2m4 0h2"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.5 11h11L21 7H6.2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m2 9 10-5 10 5-10 5L2 9Zm4 2v5c3 2.5 9 2.5 12 0v-5"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.2Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="social">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.2 1l-7-4a3 3 0 0 0 0-2l7-4A3 3 0 1 0 15 5l-7 4a3 3 0 1 0 0 6l7 4a3 3 0 1 0 3-3Z"/></svg>
+      <a href="https://www.facebook.com/superguardsng" target="_blank" rel="noopener">Facebook</a><a href="#">Instagram</a><a href="#" class="hide-sm">X</a>
+    </div>
+    <div class="info">
+      <span class="hide-sm"><svg><use href="#i-pin"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=8B+Rukuba+Road+Jos+Plateau+State+Nigeria" target="_blank" rel="noopener">No. 8B Rukuba Road, Jos</a></span>
+      <span><svg><use href="#i-phone"/></svg><a href="tel:+2348161732953">+234 816 173 2953</a></span>
+      <span class="hide-sm"><svg><use href="#i-mail"/></svg><a href="mailto:superguardsltd@gmail.com">superguardsltd@gmail.com</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo" aria-label="Superguards Ltd home">
+      <img class="logo-mark" src="assets/logo-navy.png" alt="Superguards Ltd logo">
+      <span class="logo-text"><strong>SUPER<i>G</i>UARDS</strong><small>Limited · Security Services</small></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#home" class="active">Home <span class="plus">+</span></a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services <span class="plus">+</span></a></li>
+      <li><a href="#sectors">Sectors</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="emergency">For <span>Emergency!</span><b><a href="tel:+2348161732953">+234 816 173 2953</a></b></div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <svg class="crosshair" style="top:16%;left:13%" viewBox="0 0 90 90" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="45" cy="45" r="14"/><circle cx="45" cy="45" r="5"/><path d="M8 8l74 74M82 8 8 82"/></g></svg>
+  <svg class="crosshair" style="top:44%;left:56%" viewBox="0 0 90 90" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="45" cy="45" r="14"/><circle cx="45" cy="45" r="5"/><path d="M8 8l74 74M82 8 8 82"/></g></svg>
+  <div class="container">
+    <div class="rail" id="rail" aria-label="Slides">
+      <button data-i="3">04</button><button data-i="2">03</button><button data-i="1">02</button><button data-i="0" class="on">01</button>
+    </div>
+    <div class="hero-copy">
+      <div class="slide on">
+        <h1>Security <em>Service</em></h1>
+        <div class="tagline">For your personal safety</div>
+        <p class="lead">From our base in Jos, Superguards Ltd protects banks, businesses, homes and individuals with trained guards, round-the-clock supervision and modern surveillance.</p>
+      </div>
+      <div class="slide">
+        <h1>Manned <em>Guarding</em></h1>
+        <div class="tagline">Vetted · Trained · Supervised</div>
+        <p class="lead">Uniformed officers for estates, offices, warehouses and sites, on day, night or 24-hour shifts, checked on by mobile supervisors.</p>
+      </div>
+      <div class="slide">
+        <h1>CCTV &amp; <em>Alarms</em></h1>
+        <div class="tagline">Eyes on your property 24/7</div>
+        <p class="lead">Surveillance cameras, intruder and panic alarms linked to our control room, with response teams ready to move.</p>
+      </div>
+      <div class="slide">
+        <h1>Event <em>Security</em></h1>
+        <div class="tagline">Calm · Controlled · Professional</div>
+        <p class="lead">Access control, crowd management and VIP protection for weddings, conferences, concerts and launches.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get a Free Assessment</a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="watermark" aria-hidden="true">SUPERGUARDS</div>
+      <!-- 360° rotating officer: flipbook animation from a sprite sheet (90 frames, 10 cols x 9 rows) -->
+      <div class="guard guard-sprite" role="img" aria-label="Superguards security officer turning 360 degrees"
+           data-frames="90" data-cols="10" data-rows="9" data-fps="9"
+           style="background-image:url('assets/guard-360-sprite.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat"><b>2007</b><small>NSCDC licensed since</small></div>
+      <div class="stat"><b>150<span>+</span></b><small>Trained security officers</small></div>
+      <div class="stat"><b>20<span>+</span></b><small>Admin &amp; accounting staff</small></div>
+      <div class="stat"><b>24<span>/7</span></b><small>Supervision &amp; response</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <img class="about-photo" src="assets/superguards-team.jpg" alt="Superguards officers in uniform on duty outside a client's office entrance" loading="lazy">
+      <div class="about-card"><b>100%</b><span>Vetted, trained &amp; supervised officers</span></div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">About Superguards</span>
+      <div class="section-head" style="margin-bottom:22px">
+        <h2>Protection you can see. Discipline you can trust.</h2>
+      </div>
+      <p>Superguards Ltd is a private security company based in Jos, Plateau State. Our clients include commercial banks, businesses and private individuals.</p>
+      <p>We have over 150 trained security officers in the field, supported by about 20 administrative and accounting staff. Our executive directors include retired military and police officers with extensive experience in security matters.</p>
+      <p>We recruit only experienced, capable staff, and every new recruit goes through training in the Superguards operational system before deployment. Every officer we deploy is background-checked, trained and supervised by field managers who visit your site regularly. Our control room tracks every post around the clock, so problems are spotted early and handled fast.</p>
+      <ul class="checks">
+        <li><svg><use href="#i-check"/></svg>Thorough background screening</li>
+        <li><svg><use href="#i-check"/></svg>Continuous officer training</li>
+        <li><svg><use href="#i-check"/></svg>Site-specific security plans</li>
+        <li><svg><use href="#i-check"/></svg>Daily incident reporting</li>
+        <li><svg><use href="#i-check"/></svg>Led by ex-military &amp; police officers</li>
+        <li><svg><use href="#i-check"/></svg>Transparent monthly billing</li>
+      </ul>
+      <a href="#contact" class="btn btn-dark">Talk to Our Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Security services built around you</h2>
+      <p>From a single gate post to a full estate security setup, we combine trained people, clear procedures and technology.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal"><span class="num">01</span><div class="icon"><svg><use href="#i-guard"/></svg></div><h3>Manned Guarding</h3><p>Uniformed, trained security officers for homes, offices, estates, warehouses and construction sites, on day, night or 24-hour shifts.</p></article>
+      <article class="svc reveal"><span class="num">02</span><div class="icon"><svg><use href="#i-vip"/></svg></div><h3>Executive Protection</h3><p>Discreet close-protection officers and secure escorts for executives, expatriates, VIPs and their families.</p></article>
+      <article class="svc reveal"><span class="num">03</span><div class="icon"><svg><use href="#i-cam"/></svg></div><h3>CCTV &amp; Surveillance</h3><p>Design, installation and maintenance of CCTV systems with remote viewing so you can check your premises from your phone.</p></article>
+      <article class="svc reveal"><span class="num">04</span><div class="icon"><svg><use href="#i-bell"/></svg></div><h3>Alarm Monitoring &amp; Response</h3><p>Intruder and panic alarms connected to our control room, backed by response teams and coordination with the authorities.</p></article>
+      <article class="svc reveal"><span class="num">05</span><div class="icon"><svg><use href="#i-crowd"/></svg></div><h3>Event Security</h3><p>Access control, crowd management and VIP handling for weddings, concerts, conferences, product launches and religious gatherings.</p></article>
+      <article class="svc reveal"><span class="num">06</span><div class="icon"><svg><use href="#i-clip"/></svg></div><h3>Risk Assessment &amp; Consulting</h3><p>Site surveys, vulnerability assessments and security policies that show where you are exposed and how to fix it.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="section why" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why choose Superguards</span>
+      <h2>More than a guard at the gate</h2>
+      <p>Security only works when it is supervised, accountable and always on. That's the standard we hold ourselves to.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-list">
+        <div class="why-item reveal"><div class="icon"><svg><use href="#i-badge"/></svg></div><div><h4>Licensed &amp; compliant</h4><p>We hold NSCDC Private Guard Company licence No. NSCDC/PG/007/00029 (Category B), issued 14 March 2007, and meet the regulatory requirements for the private security industry in Nigeria.</p></div></div>
+        <div class="why-item reveal"><div class="icon"><svg><use href="#i-book"/></svg></div><div><h4>Trained officers</h4><p>Officers complete training in access control, patrol, first aid, fire safety, report writing and customer care before deployment.</p></div></div>
+        <div class="why-item reveal"><div class="icon"><svg><use href="#i-radio"/></svg></div><div><h4>Supervised around the clock</h4><p>Unannounced supervisor visits and control-room check-ins keep every post alert, day and night.</p></div></div>
+        <div class="why-item reveal"><div class="icon"><svg><use href="#i-shield"/></svg></div><div><h4>Experienced leadership</h4><p>Our executive directors include retired military and police officers who bring years of hands-on security experience to every assignment.</p></div></div>
+        <div class="why-item reveal"><div class="icon"><svg><use href="#i-bolt"/></svg></div><div><h4>Fast, coordinated response</h4><p>Clear escalation procedures and working relationships with emergency services when every minute counts.</p></div></div>
+      </div>
+      <div class="bars reveal">
+        <h3>Our service focus</h3>
+        <p>Where our clients rely on us most. <span class="ph">Adjust these to match the business mix.</span></p>
+        <div class="bar-row"><div class="top"><span>Manned guarding</span><span>95%</span></div><div class="bar"><i data-w="95"></i></div></div>
+        <div class="bar-row"><div class="top"><span>CCTV &amp; surveillance</span><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
+        <div class="bar-row"><div class="top"><span>Alarm response</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+        <div class="bar-row"><div class="top"><span>Event security</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+        <div class="bar-row"><div class="top"><span>Executive protection</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>From first call to full protection</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="circle">01</div><h4>Free consultation</h4><p>Tell us about your property, concerns and budget by phone, WhatsApp or the form below.</p></div>
+      <div class="step reveal"><div class="circle">02</div><h4>Site assessment</h4><p>Our supervisor visits to survey entry points, lighting, blind spots and existing measures.</p></div>
+      <div class="step reveal"><div class="circle">03</div><h4>Tailored proposal</h4><p>You receive a clear plan: number of officers, shifts, equipment and a transparent quote.</p></div>
+      <div class="step reveal"><div class="circle">04</div><h4>Deploy &amp; monitor</h4><p>Officers are deployed and supervised, with regular reports and reviews to keep standards high.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Sectors -->
+<section class="section sectors" id="sectors">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Who we protect</span>
+      <h2>Sectors we serve</h2>
+    </div>
+    <div class="sector-grid">
+      <div class="sector reveal"><svg><use href="#i-home"/></svg><span>Homes &amp; Estates</span></div>
+      <div class="sector reveal"><svg><use href="#i-bank"/></svg><span>Banks &amp; Finance</span></div>
+      <div class="sector reveal"><svg><use href="#i-factory"/></svg><span>Industrial Sites</span></div>
+      <div class="sector reveal"><svg><use href="#i-cart"/></svg><span>Retail &amp; Malls</span></div>
+      <div class="sector reveal"><svg><use href="#i-school"/></svg><span>Schools</span></div>
+      <div class="sector reveal"><svg><use href="#i-cross"/></svg><span>Hospitals</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section class="band">
+  <div class="container">
+    <div class="band-left">
+      <div class="shield-ico"><svg viewBox="0 0 24 24"><use href="#i-shield"/></svg></div>
+      <div><h3>Need guards on site this week?</h3><p>Request a free assessment and get a proposal within <span class="ph">48 hours</span>.</p></div>
+    </div>
+    <a href="#contact" class="btn btn-dark">Book an Assessment</a>
+  </div>
+</section>
+
+<!-- Testimonials (placeholders – use real client quotes with permission) -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Client feedback</span>
+      <h2>What our clients say</h2>
+    </div>
+    <div class="t-grid">
+      <div class="t-card reveal"><div class="q">“</div><p><span class="ph">[Real client testimonial goes here. Use the client's actual words, with their permission.]</span></p><div class="t-who"><div class="av">A</div><div><b class="ph">[Client name]</b><small>[Role, Organisation]</small></div></div></div>
+      <div class="t-card reveal"><div class="q">“</div><p><span class="ph">[Real client testimonial goes here. Use the client's actual words, with their permission.]</span></p><div class="t-who"><div class="av">B</div><div><b class="ph">[Client name]</b><small>[Role, Organisation]</small></div></div></div>
+      <div class="t-card reveal"><div class="q">“</div><p><span class="ph">[Real client testimonial goes here. Use the client's actual words, with their permission.]</span></p><div class="t-who"><div class="av">C</div><div><b class="ph">[Client name]</b><small>[Role, Organisation]</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="padding-top:0">
+  <div class="container faq-grid">
+    <div class="faq reveal">
+      <span class="eyebrow">FAQs</span>
+      <div class="section-head" style="margin-bottom:18px"><h2>Common questions</h2></div>
+      <details open><summary>Are your guards licensed and trained?<span class="plus"><svg width="14" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary><p>Yes. Superguards has been licensed by the Nigeria Security and Civil Defence Corps (NSCDC) since March 2007, licence No. NSCDC/PG/007/00029 (Category B), and every officer is screened and trained before deployment, with refresher training throughout their service.</p></details>
+      <details><summary>How quickly can you deploy officers?<span class="plus"><svg width="14" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary><p>After the site assessment and agreement, we can usually deploy within a few days. For urgent cases, talk to us and we'll do our best to cover you sooner.</p></details>
+      <details><summary>Do you cover short-term or one-off events?<span class="plus"><svg width="14" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary><p>Yes. We provide event security for single days or weekends, as well as long-term monthly contracts for homes and businesses.</p></details>
+      <details><summary>How is pricing calculated?<span class="plus"><svg width="14" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary><p>Pricing depends on the number of officers, shift hours, site risk level and any equipment needed. After the free assessment you get a clear, itemised quote with no hidden charges.</p></details>
+      <details><summary>Which locations do you serve?<span class="plus"><svg width="14" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary><p>We provide nationwide coverage, deploying officers to sites anywhere in Nigeria. Our office is at No. 8B Rukuba Road, Jos, Plateau State, and our team will plan deployment and supervision for your location.</p></details>
+    </div>
+    <aside class="faq-aside reveal">
+      <span class="eyebrow">Emergency or urgent request?</span>
+      <h3>Speak to our control room</h3>
+      <p>Our team is available 24 hours a day, 7 days a week.</p>
+      <div class="phone"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></div><div><small>Call us anytime</small><b><a href="tel:+2348161732953">+234 816 173 2953</a></b></div></div>
+      <a href="#contact" class="btn btn-primary">Request a Call Back</a>
+    </aside>
+  </div>
+</section>
+
+<!-- Quote / Contact -->
+<section class="section quote" id="contact">
+  <div class="container quote-grid">
+    <div class="reveal">
+      <div class="section-head" style="margin-bottom:34px">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Request a free security assessment</h2>
+        <p>Tell us what you need to protect. A Superguards supervisor will contact you to arrange a site visit.</p>
+      </div>
+      <div class="contact-list">
+        <div><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg></div><div><small>Office</small><a href="https://www.google.com/maps/search/?api=1&amp;query=8B+Rukuba+Road+Jos+Plateau+State+Nigeria" target="_blank" rel="noopener">No. 8B Rukuba Road, Jos, Plateau State</a></div></div>
+        <div><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></div><div><small>Phone / WhatsApp</small><span><a href="tel:+2348161732953">+234 816 173 2953</a></span></div></div>
+        <div><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-mail"/></svg></div><div><small>Email</small><a href="mailto:superguardsltd@gmail.com">superguardsltd@gmail.com</a></div></div>
+        <div><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-clock"/></svg></div><div><small>Office hours</small>Mon – Fri, 8:00am – 5:00pm · Control room 24/7</div></div>
+      </div>
+    </div>
+    <form class="card reveal" id="quoteForm" action="https://formsubmit.co/c0da28d44249442c0079a251b4aa6b75" method="POST" novalidate>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <h3>Quote request</h3>
+      <p>Fields marked * are required.</p>
+      <div class="fields">
+        <div><label for="name">Full name *</label><input id="name" name="name" required autocomplete="name"></div>
+        <div><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="+234"></div>
+        <div><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email"></div>
+        <div><label for="service">Service needed *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Manned Guarding</option>
+            <option>Executive Protection</option>
+            <option>CCTV &amp; Surveillance</option>
+            <option>Alarm Monitoring &amp; Response</option>
+            <option>Event Security</option>
+            <option>Risk Assessment &amp; Consulting</option>
+          </select></div>
+        <div><label for="property">Property type</label>
+          <select id="property" name="property">
+            <option value="">Select</option>
+            <option>Residential home</option><option>Estate</option><option>Office / Corporate</option><option>Industrial / Warehouse</option><option>Retail</option><option>School / Hospital</option><option>Event</option><option>Other</option>
+          </select></div>
+        <div><label for="location">Location (city / area)</label><input id="location" name="location"></div>
+        <div class="full"><label for="message">Tell us about your needs</label><textarea id="message" name="message" placeholder="e.g. 2 guards for a 4-unit residential compound, 24-hour shifts"></textarea></div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Send Request</button>
+        <button type="button" class="btn btn-dark" id="waSend"><svg width="18" viewBox="0 0 24 24"><use href="#i-wa"/></svg>Send via WhatsApp</button>
+      </div>
+      <div class="form-ok" id="formOk">Thank you! Your request has been received. Our team will contact you shortly.</div>
+      <p class="form-note">We'll only use your details to respond to your enquiry.</p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container foot-grid">
+    <div class="foot-about">
+      <a href="#home" class="logo" aria-label="Superguards Ltd">
+        <img class="logo-mark" src="assets/logo-white.png" alt="Superguards Ltd logo">
+        <span class="logo-text"><strong>SUPERGUARDS</strong><small>Limited · Security Services</small></span>
+      </a>
+      <p>Professional guarding, protection and electronic security for homes, businesses and institutions across Nigeria.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/superguardsng" target="_blank" rel="noopener" aria-label="Superguards on Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8Z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm5 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm5.5-9.5h0"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Manned Guarding</a></li>
+        <li><a href="#services">Executive Protection</a></li>
+        <li><a href="#services">CCTV &amp; Surveillance</a></li>
+        <li><a href="#services">Alarm Monitoring</a></li>
+        <li><a href="#services">Event Security</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#why">Why Superguards</a></li>
+        <li><a href="#sectors">Sectors</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=8B+Rukuba+Road+Jos+Plateau+State+Nigeria" target="_blank" rel="noopener">No. 8B Rukuba Road, Jos, Plateau State</a></li>
+        <li><a href="tel:+2348161732953">+234 816 173 2953</a></li>
+        <li><a href="mailto:superguardsltd@gmail.com">superguardsltd@gmail.com</a></li>
+      </ul>
+      <div class="licence" style="margin-top:18px"><svg viewBox="0 0 24 24"><use href="#i-badge"/></svg><span>NSCDC Licence: NSCDC/PG/007/00029 (Cat. B)<br>RC No: <span class="ph">[XXXXXXX]</span></span></div>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© <span id="yr"></span> Superguards Ltd. All rights reserved.</span>
+    <span>Website by <a href="https://hivewebtechnologies.com" style="color:var(--amber)">Hiveweb Technologies</a></span>
+  </div>
+</footer>
+
+<a class="wa" id="waFloat" href="#" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+
+<script>
+  // ==== Set the client's WhatsApp number here (international format, digits only) ====
+  const WHATSAPP_NUMBER = '2348161732953';
+
+  // 360° guard flipbook — loops forever, no video/autoplay restrictions
+  (() => {
+    const el = document.querySelector('.guard-sprite'); if (!el) return;
+    const n = +el.dataset.frames, cols = +el.dataset.cols, rows = +el.dataset.rows, ms = 1000 / +el.dataset.fps;
+    let i = 0, last = 0;
+    const tick = t => {
+      if (t - last >= ms) {
+        last = t; i = (i + 1) % n;
+        el.style.backgroundPosition = `${(i % cols) / (cols - 1) * 100}% ${Math.floor(i / cols) / (rows - 1) * 100}%`;
+      }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  })();
+  // Hero slider
+  (() => {
+    const slides = document.querySelectorAll('.slide'), btns = document.querySelectorAll('#rail button');
+    let cur = 0, timer;
+    const go = i => {
+      slides[cur].classList.remove('on'); cur = i; slides[cur].classList.add('on');
+      btns.forEach(b => b.classList.toggle('on', +b.dataset.i === cur));
+    };
+    const auto = () => { clearInterval(timer); timer = setInterval(() => go((cur + 1) % slides.length), 6000); };
+    btns.forEach(b => b.addEventListener('click', () => { go(+b.dataset.i); auto(); }));
+    auto();
+  })();
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+
+  // Reveal on scroll + animate bars
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.bar i').forEach(b => b.style.width = b.dataset.w + '%');
+      io.unobserve(e.target);
+    });
+  }, { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // WhatsApp links
+  const wa = text => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  document.getElementById('waFloat').href = wa('Hello Superguards, I would like to enquire about your security services.');
+  document.getElementById('waFloat').target = '_blank';
+
+  // Form handling
+  const form = document.getElementById('quoteForm');
+  function valid() {
+    let ok = true;
+    form.querySelectorAll('[required]').forEach(f => {
+      const bad = !f.value.trim();
+      f.style.borderColor = bad ? '#d64545' : '';
+      if (bad) ok = false;
+    });
+    return ok;
+  }
+  function summary() {
+    const d = Object.fromEntries(new FormData(form));
+    return `Quote request – Superguards Ltd\nName: ${d.name}\nPhone: ${d.phone}\nEmail: ${d.email || '-'}\nService: ${d.service}\nProperty: ${d.property || '-'}\nLocation: ${d.location || '-'}\nDetails: ${d.message || '-'}`;
+  }
+  document.getElementById('waSend').addEventListener('click', () => {
+    if (valid()) window.open(wa(summary()), '_blank');
+  });
+  // Form → emailed to Superguards via FormSubmit (no backend needed)
+  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/c0da28d44249442c0079a251b4aa6b75';
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (!valid()) return;
+    const btn = form.querySelector('button[type=submit]'), ok = document.getElementById('formOk');
+    const d = Object.fromEntries(new FormData(form));
+    if (d._honey) return; // spam bot
+    delete d._honey;
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+      const r = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ ...d, _subject: `New quote request from ${d.name} – Superguards website`, _template: 'table', _replyto: d.email || undefined })
+      });
+      const res = await r.json().catch(() => ({}));
+      if (!r.ok || String(res.success) !== 'true') throw new Error(res.message || r.status);
+      ok.style.cssText = 'display:block';
+      ok.textContent = 'Thank you! Your request has been sent. Our team will contact you shortly.';
+      form.reset();
+    } catch (err) {
+      ok.style.cssText = 'display:block;background:#fdecec;color:#9b1c1c';
+      ok.innerHTML = 'Sorry, your request could not be sent. Please call <a href="tel:+2348161732953"><b>+234 816 173 2953</b></a> or use the WhatsApp button.';
+    } finally {
+      btn.disabled = false; btn.textContent = 'Send Request';
+    }
+  });
+</script>
+</body>
+</html>
